@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <title>Reservia</title>
+    </head>
+
+    <body>
+
+        <!--En-tête-->
+        <header>
+            <!--Logo-->
+            <figure>
+                <img src="images/logo/Reservia.svg" alt="logo Reservia"/>
+            </figure>
+
+            <!--Menu-->
+            <nav>
+                <ul>
+                    <li><a href="#hebergements">Hébergements</a></li>
+                    <li><a href="#activites">Activités</a></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <ul>
+                    <li><a href="#"><strong>S'inscrire</strong></a></li>
+                </ul>
+            </nav>
+
+            <!--Titre-->
+            <div id="en-tete">
+                <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                <h2>En plein centre ville ou en pleine nature</h2>
+
+                <!--Barre de recherche-->
+                <div id="recherche">
+                    <img/>
+
+                    <form method="post" action="traitement.php">
+                        <p><input type="text" name="pseudo"/></p>
+                        <p><input type="submit" value="Rechercher"/></p>
+                    </form>
+
+                </div>
+
+                <!--Filtres-->
+                <div id="filtres">
+                    <ul>
+                        <li>Filtres</li>
+                        <li><a>Économique</a></li>
+                        <li><a>Familial</a></li>
+                        <li><a>Romantique</a></li>
+                        <li><a>Animaux autorisés</a></li>
+                    </ul>
+                </div>
+
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+        </header>
+
+        <main>
+
+            <!--Section "hébergements"-->
+            <section id="hebergements">
+                <!--Hébergements à Marseille-->
+                <article>
+                    <h3>Hébergements à Marseille</h3>
+
+                    <!--miniatures cliquables-->
+                    <div id="cases_hebergements">
+                        <div>
+                            <img src=""/>
+                            <h4>Auberge La Cannebière</h4>
+                            <p>Nuit à partir de <strong>25€</strong></p>
+                        </div>
+
+                        <div>
+                            <img src=""/>
+                            <h4>Hôtel du port</h4>
+                            <p>Nuit à partir de 52<strong>€</strong></p>
+                        </div>
+
+                        <div>
+                            <img src=""/>
+                            <h4>Hôtel les mouettes</h4>
+                            <p>Nuit à partir de 76<strong>€</strong></p>
+                        </div>
+
+                        <div>
+                            <img src=""/>
+                            <h4>Hôtel de la mer</h4>
+                            <p>Nuit à partir de 46<strong>€</strong></p>
+                        </div>
+
+                        <div>
+                            <img src=""/>
+                            <h4>Auberge Le Panier</h4>
+                            <p>Nuit à partir de <strong>23€</strong></p>
+                        </div>
+
+                        <div>
+                            <img src=""/>
+                            <h4>Hôtel chez Amina</h4>
+                            <p>Nuit à partir de 96<strong>€</strong></p>
+                        </div>
+                    </div>
+                </article>
+
+                <!--Les plus populaires-->
+                <aside>
+                    <h3>Les plus populaires</h3>
+
+                    <div>
+                        <!--miniatures cliquables-->
+                        <div>
+                            <img src=""/>
+                            <h4>Hôtel Le soleil du matin</h4>
+                            <p>Nuit à partir de 128<strong>€</strong></p>
+                        </div>
+
+                        <div>
+                            <img src=""/>
+                            <h4>Au coeur de l'eau </br>
+                            Chambres d'hôtes</h4>
+                            <p>Nuit à partir de 71<strong>€</strong></p>
+                        </div>
+
+                        <div>
+                            <img src=""/>
+                            <h4>Hôtel Tout bleu et blanc</h4>
+                            <p>Nuit à partir de 68<strong>€</strong></p>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <!--Section "activités"-->
+            <section id="activites">
+                <h3>Activités à Marseille</h3>
+
+                <div>
+                    <img src=""/>
+                    <h4>Vieux Port</h4>
+                </div>
+
+                <div>
+                    <div>
+                        <img src=""/>
+                        <h4>Fort de Pomègues</h4>
+                    </div>
+
+                    <div>
+                        <img src=""/>
+                        <h4>Îles du Frioul</h4>
+                    </div>
+                </div>
+
+                <div>
+                    <img src=""/>
+                    <h4>Parc National des Calanques</h4>
+                </div>
+
+                <div>
+                    <div>
+                        <img src=""/>
+                        <h4>Notre-Dame-de-la-Garde</h4>
+                    </div>
+
+                    <div>
+                        <img src=""/>
+                        <h4>Parc Lonchamp</h4>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!--Pied de page-->
+        <footer></footer>
+
+    </body>
+
+</html>
