@@ -1,0 +1,131 @@
+/*Mise en place de la police générale*/
+    @font-face {
+        font-family: Raleway-regular;
+        src: url(fonts/static/Raleway-Regular.ttf);
+    }
+
+    *
+    {
+        font-family: Raleway-regular;
+    }
+
+    strong
+    {
+        font-weight: bold;
+    }
+
+/*Structure générale*/
+    #ensemble
+    {
+        margin: 50px;
+        width: auto;
+    }
+
+/*Structure de l'en-tête*/
+
+    /*Fixation du logo à gauche*/
+    figure
+    {
+        margin: 0;
+        float: left;
+    }
+
+    #menu
+    {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /*Décalage du bouton "Activités" du menu*/
+    #mot_activites
+    {
+        margin-left: 60px;
+        margin-right: 20px;
+    }
+
+    header li, form p
+    { 
+        display: inline-block;
+    }
+
+    /*Mise en forme du formulaire*/
+    #submit
+    {
+        background-color:#0065FC;
+        color: white;
+    }
+
+    /*Mise en forme des filtres et icônes correspondantes*/
+    #filtres
+    {
+        width: 65%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    .ovale
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        height: 38px;
+        border: solid 2px #F2F2F2;
+        border-radius: 30px;
+        padding-right: 14px;
+    }
+
+    .fa-circle
+    {
+        color:#DEEBFF;
+        margin-left: -6px;
+    }
+
+    .fa-stack-1x
+    {
+        color:#0065FC;
+        margin-left: -6px;
+    }
+
+    /*Mise en forme texte informatif*/
+    #text_info
+    {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    #text_info i
+    {
+        margin-left: -5px;
+    }
+
+
+/*Apparence de l'en-tête*/
+    h1
+    {
+        font-size: 1.3em;
+        font-weight: bolder;
+        margin-top: 40px;
+    }
+
+    /*Apparence des liens*/
+    a
+    {
+        text-decoration: none;
+    }
+
+    .bleu, .bleu:visited
+    {
+        color: #0065FC
+    }
+
+    a:visited
+    {
+        color: black;
+    }
+
+    
