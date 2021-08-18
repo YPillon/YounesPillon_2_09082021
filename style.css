@@ -4,6 +4,11 @@
         src: url(fonts/static/Raleway-Regular.ttf);
     }
 
+    @font-face {
+        font-family: Raleway-bold;
+        src: url(fonts/static/Raleway-Bold.ttf);
+    }
+
     *
     {
         font-family: Raleway-regular;
@@ -17,7 +22,7 @@
 /*Structure générale*/
     #ensemble
     {
-        margin: 50px;
+        margin: 40px 50px;
         width: auto;
     }
 
@@ -43,27 +48,86 @@
         margin-right: 20px;
     }
 
-    header li, form p
+    header li
     { 
         display: inline-block;
     }
 
-    /*Mise en forme du formulaire*/
-    #submit
+    .en-tete h1
     {
+        margin-bottom: 0;
+    }
+
+    .centre-ville
+    {
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
+
+    /*Mise en forme du formulaire*/
+    .recherche
+    {
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+    
+    .recherche form {
+        display: flex;
+    }
+    
+    .recherche form span {
+        background-color: #F2F2F2;
+        display: inline-block;
+        padding: 15px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    
+    input.search_input {
+        border-color: #F2F2F2!important;
+        background-color: transparent;
+        border: 1px solid;
+        font-family: Raleway-bold;
+        font-size: 1em;
+        padding-left: 15px;
+    }
+    
+    input[type="submit"] 
+    {
+        border: 1px solid;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         background-color:#0065FC;
         color: white;
+        font-family: Raleway-bold;
+        font-size: 1em;
+        padding: 0 20px;
     }
 
     /*Mise en forme des filtres et icônes correspondantes*/
-    #filtres
+    .filtres
     {
-        width: 65%;
         display: flex;
-        justify-content:space-between;
         align-items: center;
         font-weight: bold;
         padding: 0;
+    }
+
+    .filtres span, .ovale a
+    {
+        font-family: Raleway-bold;
+    }
+
+    #filtres
+    {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    #filtres li
+    {
+        margin-right: 25px;
     }
 
     .ovale
@@ -95,7 +159,8 @@
     {
         display: flex;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-bottom: 35px;
     }
 
     #text_info i
@@ -107,8 +172,8 @@
 /*Apparence de l'en-tête*/
     h1
     {
+        font-family: Raleway-bold;
         font-size: 1.3em;
-        font-weight: bolder;
         margin-top: 40px;
     }
 
@@ -129,3 +194,176 @@
     }
 
     
+/*mise en forme "Hébergements"*/
+    
+    .fa-star
+    {
+        color: #0065FC;
+    }
+
+    .gris
+    {
+        color: #F2F2F2;
+    }
+
+    .logements
+    {
+        display: flex;
+    }
+
+    .hebergements
+    {
+        width: 65%;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        padding: 35px 35px 0px 35px;
+        margin-right: 40px;
+    }
+
+    .cases_hebergements
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    .miniatures
+    {
+        width: 30%;
+        height: 180px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: 2px 4px 10px 2px rgb(128, 128, 128, 0.3);
+    }
+
+    .miniatures:first-child
+    {
+        margin-bottom: 30px;
+    }
+
+    .miniatures img
+    {
+        width: 100%;
+        height: 60%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .miniatures h4, .miniatures p
+    {
+        margin: 0;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .miniatures h4
+    {
+        font-family: Raleway-bold;
+        font-size: 0.9em;
+    }
+
+    .miniatures p
+    {
+        font-size: 0.8em;
+    }
+
+    .hebergements h3, .populaires h3
+    {
+        font-family: Raleway-bold; 
+        font-size: 1.3em;
+        margin-top: 0;
+        margin-bottom: 25px;
+    }
+
+    .star
+    {
+        margin-left: 10px;
+        font-size: 0.8em;
+    }
+
+    .afficher_plus
+    {
+        font-family: Raleway-bold;
+    }
+
+/*Mise en forme "Les plus populaires"*/
+
+    .populaires
+    {
+        width: 30%;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+        padding: 35px 45px 0px 35px;
+    }
+
+    .titre_et_icone
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fa-chart-line
+    {
+       padding-top: 4px;
+       margin-right: -5px;
+       font-size: 1.3em;
+    }
+    
+    .miniatures_populaires:first-child, .miniatures_populaires:nth-child(2)
+    {
+        margin-bottom: 30px;
+    }
+
+    .miniatures_populaires
+    {
+        width: 100%;
+        height:130px;
+        background-color: white;
+        display:flex;
+        border-radius: 20px;
+        padding: 5px;
+        box-shadow: 2px 4px 10px 2px rgb(128, 128, 128, 0.3);
+    }
+
+    .miniatures_populaires img
+    {
+        width: 40%;
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .miniatures_populaires h4, .miniatures_populaires p
+    {
+        margin: 0;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .miniatures_populaires h4
+    {
+        font-family: Raleway-bold;
+        font-size: 0.9em;
+    }
+
+    .miniatures_populaires p
+    {
+        font-size: 0.8em;
+    }
+
+    .miniatures_populaires .star
+    {
+        margin-bottom: 10px;
+    }
+
+    .texte_populaire
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
