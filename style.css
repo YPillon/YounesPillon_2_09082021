@@ -22,14 +22,19 @@
 /*Structure générale*/
     #ensemble
     {
-        margin: 40px 50px;
+        margin: 40px;
         width: auto;
+    }
+
+    body
+    {
+        margin: 0;
     }
 
 /*Structure de l'en-tête*/
 
     /*Fixation du logo à gauche*/
-    figure
+    .logo
     {
         margin: 0;
         float: left;
@@ -41,11 +46,32 @@
         justify-content: flex-end;
     }
 
+    #menu ul
+    {
+        margin:0;
+    }
+
+    #menu li
+    {
+        font-size: 0.8em;
+    }
+
     /*Décalage du bouton "Activités" du menu*/
     #mot_activites
     {
         margin-left: 60px;
         margin-right: 20px;
+    }
+
+    .s_inscrire
+    {
+        font-family: Raleway-bold;
+    }
+
+    /*Couleur et bordure au survol du menu*/
+    #menu a:hover
+    {
+        color: #0065FC;
     }
 
     header li
@@ -56,12 +82,16 @@
     .en-tete h1
     {
         margin-bottom: 0;
+        margin-top: 60px;;
+        clear:both;
+        font-size: 1.1em;
     }
 
     .centre-ville
     {
         margin-top: 10px;
-        font-size: 0.9em;
+        margin-bottom: 20px;
+        font-size: 0.8em;
     }
 
     /*Mise en forme du formulaire*/
@@ -78,9 +108,9 @@
     .recherche form span {
         background-color: #F2F2F2;
         display: inline-block;
-        padding: 15px;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        padding: 12px 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
     
     input.search_input {
@@ -88,19 +118,19 @@
         background-color: transparent;
         border: 1px solid;
         font-family: Raleway-bold;
-        font-size: 1em;
+        font-size: 0.9em;
         padding-left: 15px;
     }
     
     input[type="submit"] 
     {
         border: 1px solid;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
         background-color:#0065FC;
         color: white;
         font-family: Raleway-bold;
-        font-size: 1em;
+        font-size: 0.9em;
         padding: 0 20px;
     }
 
@@ -113,21 +143,28 @@
         padding: 0;
     }
 
-    .filtres span, .ovale a
+    .filtres .span, .ovale a
     {
         font-family: Raleway-bold;
+        font-size: 0.9em;
     }
+
+    .ovale a
+    {
+        margin-left: -8px
+    }
+    
 
     #filtres
     {
         display: flex;
         align-items: center;
-        font-weight: bold;
+        padding-left:30px;
     }
 
     #filtres li
     {
-        margin-right: 25px;
+        margin-right: 20px;
     }
 
     .ovale
@@ -136,22 +173,41 @@
         align-items: center;
         justify-content: space-between;
         width: auto;
-        height: 38px;
+        height: 33px;
         border: solid 2px #F2F2F2;
         border-radius: 30px;
         padding-right: 14px;
     }
 
-    .fa-circle
+    
+    /*Changement d'apparence des filtres au survol*/
+    .ovale:hover
+    {
+        box-shadow: 2px 4px 10px rgb(128, 128, 128, 0.6);
+        position: relative;
+        bottom: 2px;
+        left:2px;
+    }
+
+    #filtres .fa-circle
     {
         color:#DEEBFF;
-        margin-left: -6px;
+        position: relative;
+        margin-left: -9px;
+        top: 2px;
+
+        font-size: 1.8em;
+    }
+
+    #filtres .fa-stack-1x
+    {
+        font-size: 0.7em;
+        margin-left: -9px;
     }
 
     .fa-stack-1x
     {
         color:#0065FC;
-        margin-left: -6px;
     }
 
     /*Mise en forme texte informatif*/
@@ -161,11 +217,18 @@
         align-items: center;
         margin-top: 20px;
         margin-bottom: 35px;
+        font-size: 0.8em;
     }
 
     #text_info i
     {
         margin-left: -5px;
+
+    }
+
+    #text_info .fa-circle
+    {
+        color: #F2F2F2;
     }
 
 
@@ -209,15 +272,16 @@
     .logements
     {
         display: flex;
+        margin-bottom: 50px;
     }
 
     .hebergements
     {
-        width: 65%;
+        width: 70%;
         background-color: #F2F2F2;
         border-radius: 20px;
-        padding: 35px 35px 0px 35px;
-        margin-right: 40px;
+        padding: 30px;
+        margin-right: 30px;
     }
 
     .cases_hebergements
@@ -231,7 +295,7 @@
     .miniatures
     {
         width: 30%;
-        height: 180px;
+        height: 150px;
         background-color: white;
         border-radius: 20px;
         padding: 5px;
@@ -243,12 +307,29 @@
         margin-bottom: 30px;
     }
 
-    .miniatures img
+    .image_hebergements
     {
-        width: 100%;
         height: 60%;
+        width: 100%;
+        overflow: hidden;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+    }
+
+    img[src="images/hebergements/4_small/chez_amina.jpg"]
+    {
+        margin-top: -80px;
+    }
+
+    img[src="images/hebergements/4_small/hotel_de_la_mer.jpg"]
+    {
+        margin-top: -35px;
+    }
+
+    .image_hebergements img
+    {
+        width: 100%;
+        height:auto;
     }
 
     .miniatures h4, .miniatures p
@@ -262,18 +343,18 @@
     .miniatures h4
     {
         font-family: Raleway-bold;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .miniatures p
     {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .hebergements h3, .populaires h3
     {
         font-family: Raleway-bold; 
-        font-size: 1.3em;
+        font-size: 1.1em;
         margin-top: 0;
         margin-bottom: 25px;
     }
@@ -281,7 +362,7 @@
     .star
     {
         margin-left: 10px;
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
 
     .afficher_plus
@@ -296,7 +377,7 @@
         width: 30%;
         background-color: #F2F2F2;
         border-radius: 20px;
-        padding: 35px 45px 0px 35px;
+        padding: 30px 40px 30px 30px;
     }
 
     .titre_et_icone
@@ -309,7 +390,7 @@
     {
        padding-top: 4px;
        margin-right: -5px;
-       font-size: 1.3em;
+       font-size: 1.1em;
     }
     
     .miniatures_populaires:first-child, .miniatures_populaires:nth-child(2)
@@ -320,7 +401,7 @@
     .miniatures_populaires
     {
         width: 100%;
-        height:130px;
+        height:100px;
         background-color: white;
         display:flex;
         border-radius: 20px;
@@ -328,12 +409,18 @@
         box-shadow: 2px 4px 10px 2px rgb(128, 128, 128, 0.3);
     }
 
-    .miniatures_populaires img
+    .image_populaires
     {
         width: 40%;
-        height: 100%;
+        overflow: hidden;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+    }
+
+    .image_populaires img
+    {
+        width: auto;
+        Height: 100%;
     }
 
     .miniatures_populaires h4, .miniatures_populaires p
@@ -347,12 +434,12 @@
     .miniatures_populaires h4
     {
         font-family: Raleway-bold;
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .miniatures_populaires p
     {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .miniatures_populaires .star
@@ -366,4 +453,142 @@
         flex-direction: column;
         justify-content: space-between;
         margin-left: 10px;
+    }
+
+
+/*Mise en forme "Activités"*/
+
+    .activites
+    {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .activites h3
+    {
+        font-family: Raleway-bold;
+        font-size: 1.1em;
+    }
+
+    .cases_activites
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .colonne
+    {
+        height: 400px;
+        width: 23%;
+    }
+
+    .miniatures_activites
+    {
+        border-radius: 20px;
+        width: 100%;
+        box-shadow: 2px 4px 10px 2px rgb(128, 128, 128, 0.3);
+    }
+
+    .miniatures_activites h4
+    {
+        font-family: Raleway-bold;
+        font-size: 0.8em;
+        margin:0;
+        padding-left: 20px;
+        padding-top: 12px;
+    }
+
+    .miniatures_activites img
+    {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .port, .calanques
+    {
+        height: 400px;
+    }
+
+    .port img, .calanques img
+    {
+        height: 350px;
+    }
+
+    .pomegues
+    {
+        height: 210px;
+        margin-bottom: 30px;
+    }
+
+    .pomegues img
+    {
+        height: 160px;
+    }
+
+    .frioul
+    {
+        height: 160px;
+    }
+
+    .frioul img
+    {
+        height: 110px;
+    }
+
+    .notre_dame
+    {
+        height: 180px;
+        margin-bottom: 30px;
+    }
+
+    .notre_dame img
+    {
+        height: 130px;
+    }
+
+    .longchamp
+    {
+        height: 190px;
+    }
+
+    .longchamp img
+    {
+        height: 140px;
+    }
+
+
+/*Mise en forme du pied de page*/
+
+    footer
+    {
+        display: flex;
+        background-color: #F2F2F2;
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        padding: 40px;
+    }
+
+    .colonne_footer
+    {
+        margin-right: 150px;
+    }
+
+    footer h4
+    {
+        font-family: Raleway-bold;
+        font-size: 0.9em;
+    }
+
+    footer ul
+    {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    footer li
+    {
+        margin-bottom: 15px;
+        font-size: 0.9em;
     }
