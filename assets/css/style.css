@@ -580,7 +580,37 @@ footer li {
   .miniatures_populaires .star {
     margin-left: 10px;
   }
+
+  /*Section activités*/
+  .image_activites.calanques {
+    height: 341px;
+  }
+
+  .port {
+    height: 360px;
+  }
+
+  .port img,
+  .calanques img {
+    width: 270%;
+    height: auto;
+    margin-left: -170px;
+  }
+
+  .pomegues img {
+    width: 100%;
+    margin-top: -70px;
+  }
+
+  .notre_dame {
+    height: 110px;
+  }
+
+  .longchamp {
+    height: 140px;
+  }
 }
+
 
 /*Responsive design: tous types d'écrans quand la largeur est inférieure ou égale à 767px*/
 @media (max-device-width: 767px) {
@@ -651,10 +681,9 @@ footer li {
   .en-tete h1 {
     font-size: 3.2em;
     padding-top: 70px;
-}
+  }
 
-.centre-ville {
-  font-size: 1.1em;
-}
-
+  .centre-ville {
+    font-size: 1.1em;
+  }
 }
