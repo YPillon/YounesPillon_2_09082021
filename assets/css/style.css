@@ -129,7 +129,7 @@ input.search_input {
   padding-left: 15px;
 }
 
-input[type="submit"] {
+.submit_desktop {
   border: 1px solid;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -138,6 +138,10 @@ input[type="submit"] {
   font-family: Raleway-bold;
   font-size: 0.9em;
   padding: 0 20px;
+}
+
+.submit_mobile {
+  display: none;
 }
 
 /*Mise en forme des filtres et icà´nes correspondantes*/
@@ -611,7 +615,6 @@ footer li {
   }
 }
 
-
 /*Responsive design: tous types d'écrans quand la largeur est inférieure ou égale à 767px*/
 @media (max-device-width: 767px) {
   /*Réajustement du header*/
@@ -666,7 +669,7 @@ footer li {
   .menu li {
     width: 45%;
     height: 100px;
-    font-size: 2.5em;
+    font-size: 2.7em;
   }
 
   li a.active:before {
@@ -679,11 +682,87 @@ footer li {
   }
 
   .en-tete h1 {
-    font-size: 3.2em;
+    font-size: 3em;
     padding-top: 70px;
   }
 
   .centre-ville {
-    font-size: 1.1em;
+    font-size: 1.8em;
+    margin-top: 30px;
+    margin-bottom: 50px;
   }
+
+  /*Redimension section "Recherche"*/
+  .recherche form span {
+    padding: 50px 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .fa-map-marker-alt:before {
+    font-size: 4em;
+  }
+
+  input.search_input {
+    font-size: 3em;
+    padding-left: 50px;
+  }
+
+  .submit_desktop {
+    display: none;
+  }
+
+  /*Filtres*/
+
+.filtres, #filtres {
+  flex-wrap: wrap;
+}
+
+  .filtres .span {
+    font-size: 3em;
+  }
+
+  .ovale a {
+    font-size: 2.8em;
+  }
+
+  #text_info {
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 2.5em;
+}
+
+/*Section "Logements"*/
+
+.logements {
+  flex-wrap: wrap-reverse; /*Inversion de l'ordre des Populaires/Hébergements*/
+}
+
+.hebergements h3, .populaires h3 {
+  font-size: 3em;
+}
+
+.fa-chart-line {
+  font-size: 3em;
+}
+
+.miniatures_populaires {
+  height: 300px;
+}
+
+.image_populaires {
+  width: 40%;
+}
+
+.miniatures_populaires h4 {
+  font-size: 2.2em;
+}
+
+.miniatures_populaires p {
+  font-size: 2em;
+}
+
+.star {
+  font-size: 1.5em;
+}
 }
