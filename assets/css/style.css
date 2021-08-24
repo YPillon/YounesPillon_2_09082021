@@ -1,4 +1,4 @@
-/*Mise en place de la police générale*/
+/*Mise en place de la police gÃ©nÃ©rale*/
 @font-face {
   font-family: Raleway-regular;
   src: url(../fonts/static/Raleway-Regular.ttf);
@@ -21,7 +21,7 @@ a {
   color: black;
 }
 
-/*Structure générale*/
+/*Structure gÃ©nÃ©rale*/
 
 .conteneur {
   max-width: 1350px;
@@ -35,9 +35,9 @@ body {
   margin: 0;
 }
 
-/*Structure de l'en-tête*/
+/*Structure de l'en-tÃªte*/
 
-/*Fixation du logo à gauche*/
+/*Fixation du logo Ã  gauche*/
 .logo {
   margin: 0;
   float: left;
@@ -140,7 +140,7 @@ input[type="submit"] {
   padding: 0 20px;
 }
 
-/*Mise en forme des filtres et icônes correspondantes*/
+/*Mise en forme des filtres et icÃ´nes correspondantes*/
 .filtres {
   display: flex;
   align-items: center;
@@ -243,7 +243,7 @@ li a.active:before {
   background-color: #0065fc;
 }
 
-/*mise en forme "Hébergements"*/
+/*mise en forme "HÃ©bergements"*/
 
 .fa-star {
   color: #0065fc;
@@ -419,7 +419,7 @@ li a.active:before {
   margin-left: 10px;
 }
 
-/*Mise en forme "Activités"*/
+/*Mise en forme "ActivitÃ©s"*/
 
 .activites {
   width: 100%;
@@ -538,3 +538,16 @@ footer li {
   margin-bottom: 15px;
   font-size: 1em;
 }
+
+
+/*Responsive design: tous types d'écrans quand la largeur est inférieure ou égale à 798px*/
+@media all and (max-width: 768px) {
+
+  .menu {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+  }
+
+}
+
