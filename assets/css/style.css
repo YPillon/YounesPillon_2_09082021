@@ -617,7 +617,14 @@ footer li {
 
 /*Responsive design: tous types d'écrans quand la largeur est inférieure ou égale à 767px*/
 @media (max-device-width: 767px) {
-  /*Réajustement du header*/
+  /*mise en forme du header version mobile*/
+
+  .conteneur_header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
@@ -630,7 +637,8 @@ footer li {
     float: left;
     width: 50%;
     position: absolute;
-    top: 30px;
+    top: 50px;
+    left: 40px;
   }
 
   figure.logo img {
@@ -642,6 +650,13 @@ footer li {
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
     width: 100%;
+    padding-top: 10px;
+  }
+
+  nav:last-child {
+    padding-right: 40px;
+    position: relative;
+    top: 45px;
   }
 
   nav {
@@ -667,7 +682,7 @@ footer li {
   }
 
   .menu li {
-    width: 45%;
+    width: 50%;
     height: 100px;
     font-size: 2.7em;
   }
@@ -675,28 +690,38 @@ footer li {
   li a.active:before {
     position: absolute;
     content: "";
-    bottom: 30px;
+    top: 130px;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: 6px;
+  }
+
+  li a.mot_activites:before {
+    position: absolute;
+    content: "";
+    top: 130px;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: #f2f2f2;
   }
 
   .en-tete h1 {
     font-size: 3em;
-    padding-top: 70px;
+    padding-top: 115px;
   }
 
   .centre-ville {
     font-size: 1.8em;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   /*Redimension section "Recherche"*/
   .recherche form span {
-    padding: 50px 50px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
+    padding: 30px 50px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
   }
 
   .fa-map-marker-alt:before {
@@ -719,17 +744,56 @@ footer li {
     flex-wrap: wrap;
   }
 
+  .filtres {
+    padding: 70px 0 20px;
+  }
+
+  #filtres {
+    padding-left: 0px;
+  }
+
   .filtres .span {
     font-size: 3em;
+    margin-bottom: 30px;
+  }
+
+  .ovale {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: 120px;
+    border: solid 5px #f2f2f2;
+    border-radius: 80px;
+    padding-right: 45px;
   }
 
   .ovale a {
-    font-size: 2.8em;
+    font-size: 2.7em;
+  }
+
+  .fa-lg {
+    font-size: 4em !important;
+  }
+
+  #filtres li {
+    margin-bottom: 35px;
+  }
+
+  #filtres .fa-stack-1x {
+    font-size: 0.9em;
+    margin-left: -25px;
+  }
+
+  #filtres .fa-circle {
+    color: #deebff;
+    margin-left: -25px;
+    font-size: 2em;
   }
 
   #text_info {
     margin-top: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 80px;
     font-size: 2.5em;
   }
 
@@ -752,7 +816,7 @@ footer li {
   .populaires {
     margin-bottom: 50px;
     border-radius: 0;
-    padding: 80px 50px;
+    padding: 80px 50px 100px;
   }
 
   .hebergements h3,
@@ -836,7 +900,7 @@ footer li {
   }
 
   .miniatures:last-child {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
   }
 
   .image_hebergements {
@@ -868,7 +932,7 @@ footer li {
   }
 
   .afficher_plus {
-    font-size: 2.5em;
+    font-size: 2.9em;
   }
 
   /*Activités*/
@@ -955,16 +1019,15 @@ footer li {
 
   .colonne_footer {
     width: 100%;
-}
+  }
 
-footer h4 {
-  font-size: 2.7em;
-  padding-top: 40px;
-}
+  footer h4 {
+    font-size: 2.7em;
+    padding-top: 40px;
+  }
 
-footer li {
-  margin-bottom: 30px;
-  font-size: 2.5em;
-}
-
+  footer li {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+  }
 }
