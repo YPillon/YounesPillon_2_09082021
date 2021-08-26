@@ -731,7 +731,7 @@ footer li {
   input.search_input {
     font-size: 3em;
     padding-left: 50px;
-    margin-right: -25px;
+    margin-right: -15px;
   }
 
   .submit_desktop {
@@ -745,11 +745,12 @@ footer li {
     background-color: #0065fc;
     color: white;
     border-radius: 35px;
-}
+    margin: auto;
+  }
 
   .fa-search:before {
     font-size: 3em;
-}
+  }
 
   /*Filtres*/
 
