@@ -586,7 +586,7 @@ footer li {
   }
 
   /*Section activités*/
-  .image_activites.calanques {
+  .image_activites .calanques {
     height: 341px;
   }
 
@@ -756,7 +756,8 @@ footer li {
   }
 
   .hebergements h3,
-  .populaires h3 {
+  .populaires h3,
+  .activites h3 {
     font-size: 3.5em;
     margin-bottom: 70px;
   }
@@ -868,5 +869,79 @@ footer li {
 
   .afficher_plus {
     font-size: 2.5em;
+  }
+
+  /*Activités*/
+
+  .activites {
+    padding: 0px 50px;
+    width: auto;
+  }
+
+  .cases_activites {
+    display: flex;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .colonne {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .miniatures_activites {
+    width: 100%;
+    height: 450px;
+    border-radius: 50px;
+    box-shadow: 6px 12px 50px 2px rgb(128 128 128 / 30%);
+    margin-bottom: 60px;
+  }
+
+  .image_activites {
+    width: 100%;
+    height: 70% !important;
+    overflow: hidden;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+
+  .miniatures_activites h4 {
+    font-family: Raleway-bold;
+    font-size: 2.7em;
+    margin: 0;
+    padding: 45px;
+  }
+
+  .port img,
+  .calanques img {
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
+    margin-top: -150px;
+  }
+
+  .pomegues img {
+    width: 100%;
+    height: auto;
+    margin-top: -450px;
+  }
+
+  .frioul img {
+    width: 100%;
+    height: auto;
+    margin-top: -70px;
+  }
+
+  .notre_dame img {
+    width: 100%;
+    height: auto;
+    margin-top: -50px;
+  }
+
+  .longchamp img {
+    width: 100%;
+    height: auto;
+    margin-top: -100px;
   }
 }
