@@ -719,23 +719,37 @@ footer li {
 
   /*Redimension section "Recherche"*/
   .recherche form span {
-    padding: 30px 50px;
+    padding: 35px 45px;
     border-top-left-radius: 40px;
     border-bottom-left-radius: 40px;
   }
 
   .fa-map-marker-alt:before {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   input.search_input {
     font-size: 3em;
     padding-left: 50px;
+    margin-right: -25px;
   }
 
   .submit_desktop {
     display: none;
   }
+
+  .submit_mobile {
+    border: none;
+    display: block;
+    padding: 40px;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 35px;
+}
+
+  .fa-search:before {
+    font-size: 3em;
+}
 
   /*Filtres*/
 
@@ -888,7 +902,8 @@ footer li {
 
   .hebergements {
     background-color: white;
-    padding: 80px 50px;
+    padding: 80px 50px 0;
+    margin-bottom: 0px;
   }
 
   .miniatures {
@@ -938,7 +953,7 @@ footer li {
   /*Activités*/
 
   .activites {
-    padding: 0px 50px;
+    padding: 50px 50px 0px;
     width: auto;
   }
 
