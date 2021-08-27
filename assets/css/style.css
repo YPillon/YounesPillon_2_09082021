@@ -306,6 +306,11 @@ a:visited {
   margin-top: -45px;
 }
 
+.cases_hebergements .miniatures:nth-child(5) a .image_hebergements img {
+  height: 110%;
+  width: auto;
+}
+
 .cases_hebergements .miniatures:nth-child(6) a .image_hebergements img {
   margin-top: -120px;
 }
