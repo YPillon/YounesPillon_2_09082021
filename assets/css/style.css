@@ -947,6 +947,11 @@ footer li {
     margin-top: -280px;
   }
 
+  .cases_hebergements .miniatures:nth-child(5) a .image_hebergements img {
+    height: auto;
+    width: 100%;
+  }
+
   .cases_hebergements .miniatures:nth-child(6) a .image_hebergements img {
     margin-top: -530px;
   }
