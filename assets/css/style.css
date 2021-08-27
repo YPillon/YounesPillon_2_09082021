@@ -43,6 +43,7 @@ body {
   float: left;
 }
 
+/*Mise en forme du menu*/
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -77,6 +78,17 @@ nav li a {
 nav li a.active,
 nav li a:hover {
   color: #0065fc;
+}
+
+/*Bordure bleue au-dessus du bouton "Hébergements" du menu*/
+li a.active:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0065fc;
 }
 
 .header {
@@ -144,7 +156,7 @@ input.search_input {
   display: none;
 }
 
-/*Mise en forme des filtres et icà´nes correspondantes*/
+/*Mise en forme des filtres et icônes correspondantes*/
 .filtres {
   display: flex;
   align-items: center;
@@ -191,6 +203,7 @@ input.search_input {
   left: 2px;
 }
 
+/*Ajustements des icônes*/
 #filtres .fa-circle {
   color: #deebff;
   margin-left: -7px;
@@ -235,16 +248,6 @@ a {
 
 a:visited {
   color: black;
-}
-
-li a.active:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #0065fc;
 }
 
 /*mise en forme "Hébergements"*/
@@ -352,6 +355,7 @@ li a.active:before {
   padding: 30px 40px 30px 30px;
 }
 
+/*Ajout de l'icône flèche*/
 .titre_et_icone {
   display: flex;
   justify-content: space-between;
@@ -462,6 +466,7 @@ li a.active:before {
   border-top-right-radius: 20px;
 }
 
+/*Ajustement des conteneurs pour chaque image individuellement*/
 .port,
 .calanques {
   height: 370px;
@@ -545,12 +550,14 @@ footer li {
 
 /*Responsive design: tous types d'écrans quand la largeur est inférieure ou égale à 1024px*/
 @media (min-width: 768px) and (max-width: 1024px) {
+  /*Section "Logements"*/
   .logements {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
   }
 
+  /*Hébergements*/
   .hebergements {
     width: 100%;
     margin-right: 0;
@@ -586,12 +593,13 @@ footer li {
   }
 
   /*Section activités*/
-  .image_activites .calanques {
-    height: 341px;
-  }
 
   .port {
     height: 360px;
+  }
+
+  .calanques {
+    height: 341px; /*Taille nécessaire pour aligner toutes les miniatures de la section par le bas*/
   }
 
   .port img,
@@ -687,6 +695,7 @@ footer li {
     font-size: 2.7em;
   }
 
+  /*Déplacement de la barre bleue en-dessous de "Hébergements*/
   li a.active:before {
     position: absolute;
     content: "";
@@ -696,6 +705,7 @@ footer li {
     height: 6px;
   }
 
+  /*Ajout barre grise en-dessous de "Activités" dans le menu*/
   li a.mot_activites:before {
     position: absolute;
     content: "";
@@ -753,7 +763,6 @@ footer li {
   }
 
   /*Filtres*/
-
   .filtres,
   #filtres {
     flex-wrap: wrap;
