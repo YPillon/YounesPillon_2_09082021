@@ -1105,6 +1105,7 @@ footer li {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .colonne_footer {
