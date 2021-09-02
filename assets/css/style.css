@@ -618,7 +618,7 @@ footer li {
   }
 
   .frioul {
-    height: 60px;
+    height: 80px;
   }
 
   .notre_dame {
@@ -990,11 +990,11 @@ footer li {
   }
 
   .image_hebergements img {
-    margin-top: -50px;
+    margin-top: -90px;
   }
 
   .cases_hebergements .miniatures:nth-child(4) a .image_hebergements img {
-    margin-top: -100px;
+    margin-top: -130px;
   }
 
   .cases_hebergements .miniatures:nth-child(5) a .image_hebergements img {
@@ -1003,7 +1003,7 @@ footer li {
   }
 
   .cases_hebergements .miniatures:nth-child(6) a .image_hebergements img {
-    margin-top: -200px;
+    margin-top: -250px;
   }
 
   .desc {
@@ -1068,7 +1068,7 @@ footer li {
     width: 100%;
     height: auto;
     margin-left: 0px;
-    margin-top: -25px;
+    margin-top: -70px;
   }
 
   .pomegues img {
